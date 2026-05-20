@@ -1,0 +1,118 @@
+/* ===========================
+   1. CSS VARIABLES
+   Define colors and sizes here once, use them everywhere
+   =========================== */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --bg: #f9fafb;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 32px;
+}
+
+/* ===========================
+   2. RESET — fixes browser defaults
+   =========================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   3. BASE STYLES — applies to whole page
+   =========================== */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--bg);
+  padding: var(--space-lg);
+  max-width: 800px;
+  margin: 0 auto;  /* centers the page horizontally */
+}
+
+/* ===========================
+   4. HEADINGS
+   =========================== */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: var(--space-md);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--text-dark);
+}
+
+/* ===========================
+   5. PARAGRAPHS
+   =========================== */
+p {
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+}
+
+/* ===========================
+   6. IMAGE — round profile pic
+   =========================== */
+img {
+  max-width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: var(--space-md) 0;
+}
+
+/* ===========================
+   7. LISTS
+   =========================== */
+ul, ol {
+  margin-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+li {
+  margin-bottom: var(--space-sm);
+}
+
+/* ===========================
+   8. LINKS with hover effect
+   =========================== */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;  /* smooth color change */
+}
+
+a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+/* ===========================
+   9. RESPONSIVE — for small phones
+   =========================== */
+@media (max-width: 600px) {
+  body {
+    padding: var(--space-md);
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
