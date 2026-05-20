@@ -45,10 +45,10 @@ main li:last-child {
    Define colors and sizes here once, use them everywhere
    =========================== */
 :root {
-  --primary: #10b981;
+  --primary: #7760f4;
   --primary-dark: #1e40af;
   --text-dark: #1f2937;
-  --text-light: #6b7280;
+  --text-light: #764ed3;
   --bg: #f9fafb;
   --space-sm: 8px;
   --space-md: 16px;
