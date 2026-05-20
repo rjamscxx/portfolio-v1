@@ -3,7 +3,7 @@
    Define colors and sizes here once, use them everywhere
    =========================== */
 :root {
-  --primary: #2563eb;
+  --primary: #ec4899;
   --primary-dark: #1e40af;
   --text-dark: #1f2937;
   --text-light: #6b7280;
@@ -68,7 +68,7 @@ p {
    =========================== */
 img {
   max-width: 200px;
-  border-radius: 50%;
+  border-radius: 4px;
   display: block;
   margin: var(--space-md) 0;
 }
