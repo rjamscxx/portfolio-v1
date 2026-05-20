@@ -104,17 +104,6 @@ p {
   color: var(--text-light);
   margin-bottom: var(--space-md);
 }
-
-/* ===========================
-   6. IMAGE — round profile pic
-   =========================== */
-img {
-  max-width: 200px;
-  border-radius: 4px;
-  display: block;
-  margin: var(--space-md) 0;
-}
-
 /* ===========================
    7. LISTS
    =========================== */
