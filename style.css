@@ -1,9 +1,51 @@
-/* ===========================
+/* Header styling */
+header {
+  text-align: center;
+  padding: var(--space-lg) 0;
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: var(--space-lg);
+}
+
+header p {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* Section styling */
+section {
+  padding: var(--space-md) 0;
+}
+
+/* Footer */
+footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--text-light);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+/* Improve list styling */
+main ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+main li {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+main li:last-child {
+  border-bottom: none;
+}/* ===========================
    1. CSS VARIABLES
    Define colors and sizes here once, use them everywhere
    =========================== */
 :root {
-  --primary: #ec4899;
+  --primary: #10b981;
   --primary-dark: #1e40af;
   --text-dark: #1f2937;
   --text-light: #6b7280;
