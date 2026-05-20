@@ -6,6 +6,17 @@ header {
   margin-bottom: var(--space-lg);
 }
 
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;        /* makes it a circle */
+  object-fit: cover;          /* crops nicely, no stretching */
+  border: 4px solid var(--primary);
+  margin: 0 auto var(--space-md); /* center it, with space below */
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 header p {
   font-size: 1.25rem;
   color: var(--primary);
