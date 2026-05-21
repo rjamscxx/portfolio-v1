@@ -1,21 +1,40 @@
-// 1. Store your info in const variables
-const fullName = "Robert James Cabansay";
-const myLocation = "San Pedro, Laguna, Philippines";
-const yearStarted = 2026;
-const skills = ["HTML", "CSS", "JavaScript"];
-const isHiringReady = false;
+function greet(name) {
+  console.log("Hi, " + name + "!");
+}
 
-// 2. Calculate how many days you've been learning
-//    (Day 8 means... you guessed it)
-const daysLearning = 8;
+greet("Robert");
+greet("Maria");
 
-// 3. Build a greeting using template literals
-const greeting = `Hi, I'm ${fullName} from ${myLocation}.
-I've been learning to code for ${daysLearning} days.
-Skills so far: ${skills.length} (and counting).`;
+function isEven(n) {
+  if (n % 2 === 0) {
+  return true;
+  } else {
+    return false;
+  }
+}
 
-// 4. Print it
-console.log(greeting);
+console.log(isEven(4));    // should print: true
+console.log(isEven(7));    // should print: false
+console.log(isEven(10));   // should print: true
 
-// 5. BONUS — change the page title dynamically from JS
-document.title = `${fullName} | Day ${daysLearning} of Code`;
+// 3. Write a function "skillLevel" that takes days of learning
+//    and returns:
+//      "Beginner"      if days < 30
+//      "Intermediate"  if days < 90
+//      "Advanced"      otherwise
+//
+//    HINT: Use if / else if / else
+
+  function skillLevel(days) {
+    if (days < 30) {
+      return "Beginner";
+    } else if (days < 90) {
+      return "Intermediate";
+    } else {
+      return "Advanced";
+    }
+  }
+
+  console.log(skillLevel(5));     // should print: Beginner
+  console.log(skillLevel(45));    // should print: Intermediate
+  console.log(skillLevel(120));   // should print: Advanced
