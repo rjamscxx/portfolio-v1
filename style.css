@@ -1,65 +1,11 @@
-/* Header styling */
-header {
-  text-align: center;
-  padding: var(--space-lg) 0;
-  border-bottom: 2px solid var(--primary);
-  margin-bottom: var(--space-lg);
-}
-
-header img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;        /* makes it a circle */
-  object-fit: cover;          /* crops nicely, no stretching */
-  border: 4px solid var(--primary);
-  margin: 0 auto var(--space-md); /* center it, with space below */
-  display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-header p {
-  font-size: 1.25rem;
-  color: var(--primary);
-  font-weight: 600;
-}
-
-/* Section styling */
-section {
-  padding: var(--space-md) 0;
-}
-
-/* Footer */
-footer {
-  margin-top: var(--space-lg);
-  padding-top: var(--space-md);
-  border-top: 1px solid var(--text-light);
-  text-align: center;
-  font-size: 0.875rem;
-  color: var(--text-light);
-}
-
-/* Improve list styling */
-main ul {
-  list-style: none;
-  margin-left: 0;
-}
-
-main li {
-  padding: var(--space-sm) 0;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-main li:last-child {
-  border-bottom: none;
-}/* ===========================
+/* ===========================
    1. CSS VARIABLES
-   Define colors and sizes here once, use them everywhere
    =========================== */
 :root {
-  --primary: #7760f4;
-  --primary-dark: #1e40af;
+  --primary: #10b981;          /* Fixed: emerald green */
+  --primary-dark: #047857;     /* Already emerald, keeping it */
   --text-dark: #1f2937;
-  --text-light: #764ed3;
+  --text-light: #6b7280;       /* Fixed: was purple, now neutral gray */
   --bg: #f9fafb;
   --space-sm: 8px;
   --space-md: 16px;
@@ -67,7 +13,7 @@ main li:last-child {
 }
 
 /* ===========================
-   2. RESET — fixes browser defaults
+   2. RESET
    =========================== */
 *,
 *::before,
@@ -78,7 +24,7 @@ main li:last-child {
 }
 
 /* ===========================
-   3. BASE STYLES — applies to whole page
+   3. BASE STYLES
    =========================== */
 body {
   font-family: 'Inter', system-ui, sans-serif;
@@ -87,12 +33,10 @@ body {
   background: var(--bg);
   padding: var(--space-lg);
   max-width: 800px;
-  margin: 0 auto;  /* centers the page horizontally */
+  margin: 0 auto;
 }
 
-/* ===========================
-   4. HEADINGS
-   =========================== */
+/* Headings */
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -108,16 +52,13 @@ h2 {
   color: var(--text-dark);
 }
 
-/* ===========================
-   5. PARAGRAPHS
-   =========================== */
+/* Paragraphs */
 p {
   color: var(--text-light);
   margin-bottom: var(--space-md);
 }
-/* ===========================
-   7. LISTS
-   =========================== */
+
+/* Lists */
 ul, ol {
   margin-left: var(--space-lg);
   margin-bottom: var(--space-md);
@@ -127,14 +68,12 @@ li {
   margin-bottom: var(--space-sm);
 }
 
-/* ===========================
-   8. LINKS with hover effect
-   =========================== */
+/* Links */
 a {
   color: var(--primary);
   text-decoration: none;
   font-weight: 600;
-  transition: color 0.2s ease;  /* smooth color change */
+  transition: color 0.2s ease;
 }
 
 a:hover {
@@ -143,7 +82,52 @@ a:hover {
 }
 
 /* ===========================
-   9. RESPONSIVE — for small phones
+   4. LAYOUT — header, sections, footer
+   =========================== */
+header {
+  text-align: center;
+  padding: var(--space-lg) 0;
+  border-bottom: 2px solid var(--primary);
+  margin-bottom: var(--space-lg);
+}
+
+
+header p {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+section {
+  padding: var(--space-md) 0;
+}
+
+/* Improved list styling for main content */
+main ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+main li {
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+main li:last-child {
+  border-bottom: none;
+}
+
+footer {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--text-light);
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+/* ===========================
+   5. RESPONSIVE
    =========================== */
 @media (max-width: 600px) {
   body {
