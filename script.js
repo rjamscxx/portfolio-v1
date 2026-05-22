@@ -51,13 +51,13 @@ console.log(isEven(10));   // should print: true
   console.log("Top score: " + highest);
 
   let player = {
-    name: "Robert"
+    name: "Robert",
     age: 22,
-    grade: 88
+    grade: 88,
     isPassing: true
   };
 
   console.log(player.name);
   console.log(player.age);
   console.log(player.grade);
-  console.log(student.isPassing);
+  console.log(player.isPassing);
