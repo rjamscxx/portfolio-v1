@@ -38,3 +38,13 @@ console.log(isEven(10));   // should print: true
   console.log(skillLevel(5));     // should print: Beginner
   console.log(skillLevel(45));    // should print: Intermediate
   console.log(skillLevel(120));   // should print: Advanced
+
+  let scores = [78, 92, 55, 88, 61, 45, 97];
+
+  for (let i = 0; i <scores.length; i++) {
+    if (scores[i] >= 75) {
+      console.log("PASS: " + scores[i]);
+    } else {
+      console.log("FAIL: " + scores[i]);
+    }
+  }
