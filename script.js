@@ -18,4 +18,13 @@ btn.addEventListener("click", function() {
     document.getElementById("main-title").textContent = "You clicked the button!";
     btn.textContent = "Clicked!";
     document.getElementById("main-title").style.color = "crimson";
+
+let count = 0; 
+
+let countBtn = document.getElementById("count-btn");
+let countDisplay = document.getElementById("count-display");
+
+countBtn.addEventListener("click", function () {
+    count++;
+    countDisplay.textContent = "Count:" +count;
 });
