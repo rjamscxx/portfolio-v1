@@ -61,3 +61,18 @@ console.log(isEven(10));   // should print: true
   console.log(player.age);
   console.log(player.grade);
   console.log(player.isPassing);
+
+  let students = [
+    {name: "Robert", grade: 88 },
+    {name: "Maria", grade: 60 },
+    {name: "Juan", grade: 91 },
+    {name: "Ana" , grade: 45 },
+  ];
+
+  for (let i = 0; i < students.length; i++) {
+    if (students[i].grade >= 75) {
+      console.log(students[i].name + " - PASS");
+    } else {
+      console.log(students[i].name + " - FAIL");
+    }
+  }
