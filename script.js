@@ -19,6 +19,8 @@ btn.addEventListener("click", function() {
     btn.textContent = "Clicked!";
     document.getElementById("main-title").style.color = "crimson";
 
+});
+
 let count = 0; 
 
 let countBtn = document.getElementById("count-btn");
