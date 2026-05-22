@@ -11,3 +11,11 @@ document.getElementById("description").style.fontSize = "20px";
 paragraph.textContent = "Robert is learning DOM manipulation";
 
 document.body.style.backgroundColor = "#f0f0f0";
+
+let btn = document.getElementById("change-btn");
+
+btn.addEventListener("click", function() {
+    document.getElementById("main-title").textContent = "You clicked the button!";
+    btn.textContent = "Clicked!";
+    document.getElementById("main-title").style.color = "crimson";
+});
