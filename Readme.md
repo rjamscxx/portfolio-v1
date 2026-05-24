@@ -2,7 +2,7 @@
 
 My first deployed website — built during Week 1 of my full-stack developer journey.
 
-**🌐 Live site:** https://portfolio-v1-xxxx.vercel.app (replace with your URL)
+**🌐 Live site:** https://portfolio-v1-rjamscxx.vercel.app/
 
 ## Built with
 - HTML5 (semantic markup)
